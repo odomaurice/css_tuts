@@ -1,0 +1,76 @@
+/* UNIVERSAL SELECTORS */
+
+/* A universal selector is referred to as a 'wildcard', as it selects every html content in the entire page irrespective of its class, id, group or name. It applies the chosen feature to the entire contents in the page. It is represented by the '*' symbol. The universal selector is used for general features you want the entire content to have instead of specifying them individually on those elements such as: Reset styles(general styles you don't want to alter), font(if you want the entire page to have a particular font-family or font-size or even font-weight, the first is often used, but the latter two are hardly used as universal styles). Let's see an example. */
+
+
+*{
+     box-sizing: border-box; 
+     /* This feature is set so that the box model properties do not occupy more than the spaces it has been allocated, thereby discarding the default set properties. */
+
+     padding: 0;
+     margin: 0;
+    
+}
+
+
+
+
+/* ELEMENT SELECTORS */
+/* This selects the html content to be styled by its name */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+
+}
+
+header{
+    color: black;
+}
+
+
+
+/* CLASS SELECTORS */
+
+/* The class selector selects HTML elements with a specific class attribute. It is used with a period character . (OR full stop symbol) followed by the class name. In our html document, we have classes in the paragraph tags, with the names: one, two and three*/
+
+.one{
+    background-color: red;
+}
+
+.two{
+    background-color: green;
+
+}
+
+.three{
+    background-color: blue;
+}
+
+
+/* ID SELECTORS */
+
+/* The id selector selects the id attribute of an HTML element to select a specific element. An id is always unique within the page so it is chosen to select a single,
+unique element. It is written with the hash character (#),
+followed by the id of the element. In our html document, we have ids on the span tag with the name "highlight"*/
+
+#highlight{
+    color: gold;
+    font-style: italic;
+}
+
+
+
+/* GROUP SELECTORS */
+
+/* This selector is used when there is a reoccuring style properties, for instance, when we have particular style(s) that is similar. A good code practice is said to be DRY(Don't repeat yourself) and so when we have similar allocated style properties, we use group selectors to make our codes DRY. */
+
+h2, p, span{
+    background-color: blue;
+    color: white;
+}
+
+
+/* We want these selected elements to have similar background and text colors, and so instead of repeating them all over again on each individual element, we represent them as a group, seperated by a comma ",". */
+
+/* NB: There is an issue of specificity when discussing about various selectors. The id selector takes prior place before the other selectors, followed by the class selector and then the element selector. If a styling has been specified in all three basic selectors: id, class and element selectors, the styling in the id selector will be applied. If a styling has not been specified in the id, the class styling will not be applied and the element selector will be applied if there is no similar styling in the class or id selectors. As an example: If the paragraph element has an id  of color red, and a class  of color green, and  element name  of color blue, the red color will be applied to the element, but if there is no id specification, the green color will  be applied and so will the blue color be applied to the element if there is no id and class specifications. Threfore, the id is prior to the class and the class is prior to the element selector */

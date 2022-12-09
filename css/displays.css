@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Merriweather:ital,wght@0,400;0,700;1,700&family=Nunito&family=Poppins:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&family=Sacramento&display=swap');
+
+
+body{
+    font-size: 2rem;
+    font-family: 'Poppins', cursive;
+}
+
+p{
+    background-color: aliceblue;
+}
+
+.opposite{
+    display: inline-block;
+    background-color: #333;
+    color: whitesmoke;
+    padding: 4rem;
+}

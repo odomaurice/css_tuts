@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Merriweather:ital,wght@0,400;0,700;1,700&family=Nunito&family=Poppins:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&family=Sacramento&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", cursive;
+    text-align: center;
+    padding: 1rem;
+    margin: 1.5rem;
+}
+
+p{
+    margin: 1rem 2rem;
+}
+
+span{
+    font-size: 30px;
+    text-transform: uppercase;
+    /* text-decoration: line-through; */
+}
+
+form{
+    font-style: italic;
+    font-weight: inherit;
+}
